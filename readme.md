@@ -52,7 +52,7 @@ Your production site build is ready to be explored @ `http://localhost:8000`
 Generating Publishable Production Builds
 ----------------------------------------
 
-When you want to create a publishable production build based on the `www.squareweave.com.au` domain. Run the `grunt production` task from the root.
+When you want to create a publishable production build based on the `luke.gg` domain. Run the `grunt production` task from the root.
 This will generate a complete publishable, optimised static site inside `/output_prod`. 
 
 
