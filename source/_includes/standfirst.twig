@@ -1,0 +1,16 @@
+<section class="standfirst {{ classes|default('') }}" style="background-image:url('/design/images/{{ image|default('') }}');">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-offset-2 col-sm-8 ">
+                <div class="standfirst__content vertical-rhythm">
+                    {% if title %}
+                    <h1 class="standfirst__title heading__underline">{{ title }}</h1>
+                    {% endif %}
+                    {% if subtitle %}
+                        <h2 class="standfirst__subtitle">{{ subtitle }}</h2>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,38 @@
+{% set limit = 0 %}
+
+{% set name = "" %}
+{% set email = "" %}
+{% set image = "" %}
+{% set position = "" %}
+{% set authordata = "" %}
+
+<div class="blog-list">
+
+    {% for post in page.pagination.items %}
+
+        {% if (limit < limit_to) or (limit_to is null) %}
+            <article class="blog-item">
+
+                <figure class="blog-item__image hidden-xs">
+                    <a href="{{ post.url }}">
+                        <img src="/design/images/posts/{{ post.images.preview }}" alt="{{ post.title }}"/>
+                    </a>
+                </figure>
+
+                <h1 class="blog-item__title">
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                </h1>
+
+                <div class="blog-item__excerpt">
+                    {{ post.excerpt|raw }}
+                </div>
+
+                {% include 'author' with {'key': post.author} %}
+
+            </article>
+
+           {% set limit = limit + 1 %}
+        {% endif %}
+    {% endfor %}
+
+</div>

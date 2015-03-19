@@ -1,0 +1,22 @@
+{% set name = "" %}
+{% set email = "" %}
+{% set image = "" %}
+{% set position = "" %}
+{% if site.team[key] is not empty %}
+    {% set name = site.team[key].name %}
+    {% set email = site.team[key].email %}
+    {% set image =  site.team[key].image %}
+    {% set position =  site.team[key].role %}
+{% endif %}
+
+<aside class="author">
+    <figure class="author__image">
+        <img src="/design/images/people/small/{{ image }}" alt="{{ name }}"/>
+    </figure>
+    <h2 class="author__name">
+        {{ name }}
+        <span class="author__position">
+           {{ position }}
+        </span>
+    </h2>
+</aside>

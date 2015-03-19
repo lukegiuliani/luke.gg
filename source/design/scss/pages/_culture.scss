@@ -1,0 +1,16 @@
+.culture{
+	background:$c__white;
+	padding:40px 0;
+	@include break(md) {
+		padding:70px 0;
+	}
+	@include break(lg) {
+		padding:100px 0;
+	}
+}
+
+.culture__introduction{
+	h2{
+		font-weight:normal;
+	}
+}

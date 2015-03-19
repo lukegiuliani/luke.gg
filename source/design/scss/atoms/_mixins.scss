@@ -1,0 +1,63 @@
+//a mixin for inline declaration of media queries. takes size then the css rules themselves.
+
+@mixin break($name) {
+	@if  (index(map-keys($breakpoints), $name)) {
+		@media (min-width: map-get($breakpoints, $name)) {
+			@content;
+		}
+	} @else {
+		@warn "Warning: '#{$name}' is not a valid breakpoint name.";
+	}
+}
+
+//this creates a centered horizontal rule either above or below a given element it is included in.
+@mixin pseudorule($z-index:1,  $top: false, $offset:0px, $color:$c__white, $width:100px, $height:3px) {
+	position:relative;
+	z-index:$z-index;
+	&:after{
+		position:absolute;
+		left:50%;
+		@if $top == false {
+			bottom:0 + $offset
+		} @else {
+			top:0 + $offset
+		}
+		background-color:$color;
+		width:$width;
+		height:$height;
+		display:block;
+		content: " ";
+		margin-left:-($width/2);
+	}
+}
+
+//direction options: right, left, up, down
+@mixin triangle($z-index:1, $isbefore: false, $direction:'up', $color:$c__black,$width:15px, $height:10px) {
+	width:0;
+	height:0;
+	display:block;
+	@if $direction == 'up' {
+		border-left: $width/2 solid transparent;
+		border-right: $width/2 solid transparent;
+		border-bottom: $height solid $color;
+	} @else if($direction == 'down') {
+		border-left: $width/2 solid transparent;
+		border-right: $width/2 solid transparent;
+		border-top: $height solid $color;
+	}@else if($direction == 'right') {
+		border-top: $width/2 solid transparent;
+		border-bottom: $width/2 solid transparent;
+		border-left: $height solid $color;
+	}@else if($direction == 'left') {
+		border-top: $width/2 solid transparent;
+		border-bottom: $width/2 solid transparent;
+		border-right:$height solid $color;
+	}
+}
+
+/*
+.triangle-left{@include triangle()}
+.triangle-right{@include triangle($direction:'right')}
+.triangle-up{@include triangle($direction:'left')}
+.triangle-down{@include triangle($direction:'down')}
+*/

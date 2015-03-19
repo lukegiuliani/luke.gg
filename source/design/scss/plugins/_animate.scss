@@ -1,0 +1,35 @@
+/**
+ * Animate.scss
+ * https://github.com/benhodgson87/animate.scss/
+ *
+ * Based on Animate.css by Dan Eden (@_dte)
+ * Ported to Sass by Ben Hodgson (@benhodgson)
+ */
+
+// Grab the settings
+@import '../../../../bower_components/animate-scss/src/settings/main',
+'../../../../bower_components/animate-scss/src/settings/modules',
+'../../../../bower_components/animate-scss/src/settings/names';
+
+
+// Import Utilities
+@import '../../../../bower_components/animate-scss/src/utilities/functions',
+'../../../../bower_components/animate-scss/src/utilities/mixins';
+
+
+// Import animation modules
+@import /*'../../../../bower_components/animate-scss/src/animations/attention-seekers/all',
+'../../../../bower_components/animate-scss/src/animations/bouncing-entrances/all',
+'../../../../bower_components/animate-scss/src/animations/bouncing-exits/all',
+'../../../../bower_components/animate-scss/src/animations/fading-entrances/all',
+'../../../../bower_components/animate-scss/src/animations/fading-exits/all',*/
+'../../../../bower_components/animate-scss/src/animations/flippers/all';
+/*'../../../../bower_components/animate-scss/src/animations/lightspeed/all',
+'../../../../bower_components/animate-scss/src/animations/rotating-entrances/all',
+'../../../../bower_components/animate-scss/src/animations/rotating-exits/all',
+'../../../../bower_components/animate-scss/src/animations/special/all',
+'../../../../bower_components/animate-scss/src/animations/zooming-entrances/all',
+'../../../../bower_components/animate-scss/src/animations/zooming-exits/all';*/
+
+// Import base animation classes
+@import '../../../../bower_components/animate-scss/src/utilities/base-classes';

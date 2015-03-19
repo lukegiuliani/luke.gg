@@ -1,0 +1,151 @@
+.staff{
+	background:#fff;
+
+	@include break(sm) {
+		background: url(../images/culture/culture__work-with-us.gif) repeat;
+	}
+
+	position:relative;
+	z-index:1;
+	//display:none;
+}
+
+.staff-member__link {
+	display: block;
+	color: #fff;
+	position: relative;
+	z-index: 1;
+	font-family: $f__proxima;
+	overflow: hidden;
+	margin: 0 auto;
+	@include break(sm) {
+		max-width: 999em;
+	}
+	&:after {
+		position: absolute;
+		z-index: 1;
+		content: " ";
+		right: 0;
+		bottom: 0;
+		left: 0;
+		top: 0;
+		display: block;
+
+		@include transition(0.2s all linear);
+		@include break(sm) {
+			@include linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .5) 100%);
+		}
+	}
+	&:hover {
+		color: #fff;
+		@include break(sm) {
+			.staff-member__avatar {
+				img {
+					-webkit-backface-visibility: hidden;
+					-webkit-filter: saturate(100%);
+					@include translate3d(0, 0, 0);
+					-webkit-transform-style: preserve-3d;
+					@include transform(scale(1.05));
+					@include transition(all 0.2s linear);
+				}
+			}
+			&:after {
+				bottom: -20px;
+				-webkit-backface-visibility: hidden;
+				@include transition(all 0.2s linear);
+			}
+		}
+	}
+}
+
+.staff-member__avatar{
+	img{
+		max-width:100%;
+		@include transform(scale(1));
+
+		-webkit-backface-visibility: hidden;
+		-webkit-transform-style: preserve-3d;
+		@include transition(all 0.2s linear);
+	}
+}
+
+.staff-member__name{
+	z-index:2;
+	position:relative;
+	left:0;
+	bottom:0;
+	right:0;
+	text-align:center;
+	line-height:23px;
+	font-size:15px;
+	font-weight:600;
+	color:#333;
+	padding:10px 0;
+	@include break(sm) {
+		color:#fff;
+	    position:absolute;
+		margin:0 0 25px 0;
+		padding:0;
+	}
+}
+
+.staff-member__role{
+	display:block;
+	font-weight:normal;
+}
+
+/*
+This is the staff 'work with us' call to action.
+It will likely need to be adjusted when a new person is added.
+*/
+.staff-work-with{
+	display:block;
+	text-align:center;
+	color:#fff;
+	clear:both;
+	padding:50px 0;
+	background: url(../images/culture/culture__work-with-us.gif) repeat;
+	&:hover{
+		color:#fff;
+	}
+	@include break(sm) {
+		padding:0;
+		position:absolute;
+		bottom:0;
+		left:33%;
+		right:0;
+		height:20%;
+		display:block;
+	}
+	@include break(md) {
+		width:75%;
+		height:25%;
+		left:25%;
+	}
+	@include break(lg) {
+
+	}
+	@include break(max) {
+
+	}
+}
+.staff-work-with__align{
+	display:block;
+	clear:both;
+	@include break(sm) {
+		display: block;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		@include transform(translate(-50%, -50%));
+		z-index: 2;
+		font-weight: bold;
+	}
+}
+.staff-work-with__subtitle{
+	font-family: $f__proxima;
+	display:block;
+	font-weight:normal;
+	font-size:14px;
+}
+

@@ -1,0 +1,34 @@
+
+.btn{
+	border-radius: 4px;
+	font-family: $f__proxima;
+	font-size:15px;
+}
+
+
+.btn-default{
+
+}
+.btn-black{
+	@include button-variant(#fff, #000, #000);
+}
+
+.btn--standfirst{
+	padding-left:0;
+	padding-right:0;
+}
+
+.btn--transparent--black{
+	@include button-variant(#000, rgba(255,255,255,0), #000);
+}
+.btn--transparent--white{
+	@include button-variant(#fff, rgba(255,255,255,0), #fff);
+}
+
+.btn--home{
+	padding:10px 45px;
+}
+
+.btn--blue{
+	@include button-variant(#fff, #3498DB, #3498DB);
+}

@@ -1,0 +1,13 @@
+.heading__underline{
+	font-weight:bold;
+	@include pseudorule($offset:-15px,$width:60px);
+}
+
+.heading__underline--red:after {
+	background: $c__red;
+}
+
+h2{
+	font-weight:bold;
+	line-height:1.3;
+}

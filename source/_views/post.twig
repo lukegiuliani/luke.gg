@@ -1,0 +1,72 @@
+{% extends "default" %}
+
+{% block content_wrapper %}
+
+    {% include 'standfirst' with {'classes': 'standfirst--blog-post overlay overlay__000000--30', 'image': 'posts/' ~ page.images.main }%}
+
+    <article class="blog-detail">
+        <div class="blog-detail__align">
+
+            <h1 class="blog-detail__title">{{ page.title }}</h1>
+
+            {% include 'author' with { 'key': page.author } %}
+
+            <div class="blog-detail__markdown vertical-rhythm">
+                {{ page.blocks.content|raw }}
+            </div>
+
+
+            <div class="blog-detail__social">
+                <a href="https://twitter.com/share" class="twitter-share-button" data-via="squareweave">Tweet</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                <script src="//platform.linkedin.com/in.js" type="text/javascript">
+                    lang: en_US
+                </script>
+                <script type="IN/Share" data-counter="right"></script>
+                <div
+                        class="fb-like"
+                        data-share="false"
+                        data-width="100"
+                        data-show-faces="false">
+                </div>
+            </div>
+
+
+
+            <div class="fb-comments" data-href="{{ site.url }}{{ page.url }}" data-numposts="5" data-colorscheme="light"></div>
+        </div>
+
+        {# look its pagination and category/tag output! Let's save this for later ^>^
+        {% if page.categories %}
+            <p class="categories">
+            Categories:
+            {% for category in page.categories %}
+            <a href="{{ site.url }}/blog/categories/{{ category|url_encode(true) }}">{{ category }}</a>{% if not loop.last %}, {% endif %}
+            {% endfor %}
+            </p>
+        {% endif %}
+        {% if page.tags %}
+            <p class="tags">
+            Tags:
+            {% for tag in page.tags %}
+            <a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+            {% endfor %}
+            </p>
+        {% endif %}
+
+        {% if page.previous_post or page.next_post %}
+            <nav class="article">
+                <ul>
+                    {% if page.next_post %}
+                        <li>Next: <a class="next" href="{{ site.url }}{{ page.next_post.url }}" title="{{ page.next_post.title }}"><span class="title">{{ page.next_post.title }}</span></a></li>
+                    {% endif %}
+                    {% if page.previous_post %}
+                        <li>Previous: <a class="previous" href="{{ site.url }}{{ page.previous_post.url }}" title="{{ page.previous_post.title }}"><span class="title">{{ page.previous_post.title }}</span></a></li>
+                    {% endif %}
+                </ul>
+            </nav>
+        {% endif %}
+        #}
+
+    </article>
+{% endblock %}

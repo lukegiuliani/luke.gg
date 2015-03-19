@@ -1,0 +1,46 @@
+
+.navnudge {
+	margin-bottom: 30px;
+}
+
+.navnudge a {
+	color: #fff;
+	border: none;
+	font-size: 21px;
+	padding: 20px 0;
+	margin-bottom: 20px;
+}
+
+.navnudge a:hover {
+	color: #fff;
+}
+
+.navnudge .btn-impact {
+	background: $lightblue;
+}
+
+.navnudge .btn-team {
+	background: $red;
+}
+
+.navnudge .btn-hire {
+	background: $text;
+}
+
+.navnudge .btn-impact:hover,
+.navnudge .btn-impact:focus,
+.navnudge .btn-impact:active {
+	background: darken($lightblue, 10%);
+}
+
+.navnudge .btn-team:hover,
+.navnudge .btn-team:focus,
+.navnudge .btn-team:active, {
+	background: darken($red, 10%);
+}
+
+.navnudge .btn-hire:hover,
+.navnudge .btn-hire:focus,
+.navnudge .btn-hire:active {
+	background: darken($text, 10%);
+}

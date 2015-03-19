@@ -1,0 +1,45 @@
+@font-face {
+	font-family: 'sqw-icons';
+	src:url('fonts/sqw-icons.eot?-ee5ezx');
+	src:url('fonts/sqw-icons.eot?#iefix-ee5ezx') format('embedded-opentype'),
+		url('fonts/sqw-icons.woff?-ee5ezx') format('woff'),
+		url('fonts/sqw-icons.ttf?-ee5ezx') format('truetype'),
+		url('fonts/sqw-icons.svg?-ee5ezx#sqw-icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'sqw-icons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phone:before {
+	content: "\e600";
+}
+
+.icon-web:before {
+	content: "\e601";
+}
+
+.icon-share:before {
+	content: "\e602";
+}
+
+.icon-desktop:before {
+	content: "\e603";
+}
+
+.icon-cloud:before {
+	content: "\e604";
+}
+

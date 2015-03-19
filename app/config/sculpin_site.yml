@@ -1,0 +1,34 @@
+# The contents of this file are parsed and made available as
+# via `site.*`. So for example, {{ site.title }} can be used
+# in a template to get the contents of the `title` key.
+app_name: SquareweaveApp
+release_version: 1.0.15
+title: Luke Giuliani
+byline: "Entrepreneur, strategist and tech"
+ga_id: UA-5821577-1
+fb_app_id: 177944409014156
+keywords: "Social Enterprise, Luke Giuliani, Luke, Giuliani, Grace, Squareweave, Fitzroy GSD, "
+description: "Passionate about using technology to make the world better, Luke is a social entrepreneur who has started numerous projects and businesses. These include Squareweave, a web company making the world better with technology; Grace, a cafe in Fitzroy; OurSay, a social enterprise connecting citizens to decision makers; and The Fitzroy Academy of Getting Shit Done, a project to teach people how to work on ideas that don’t even exist yet."
+ga_domain: ~
+team:
+    luke: { key: 11, name: Luke Giuliani, role: Founder, image: luke.jpg, url: https://www.linkedin.com/in/lukegiuliani }
+
+alumni:
+     - { name: Ben Richardson, image: ben.jpg, description: "Ben has created a slew of startups, most notably <a href='http://subservice.co/'>Subservice</a> (top 10 AUS startups 2013)." }
+     - { name: Sebastian Sibelle, image: sebastian.jpg, description: "Amelia is involved with various rad projects, like <a href='http://dropwell.com/'>Dropwell</a> and <a href='http://promobay.org/'>The Promo Bay.</a>" }
+     - { name: Amelia Kemister, image: amella.jpg, description: "Amelia snagged a job up in Sydney consulting with communities and government." }
+     - { name: Mariska Harasymiw, image: mariska.jpg, description: "Mariska was part of the winning team ‘HeyBuddy’ at <a href='https://www.fya.org.au'>FYA</a>’s Addapt project." }
+
+jobs:
+    - { name: Business Development Manager, tag: New Job, description: "Digitally-savvy, socially minded, business development type who is allergic to the word ‘sales’." }
+
+work:
+    - { url: "https://squareweave.com.au", name: Squareweave, backgroundImage: squareweave-bg.png, image: squareweave.png, imageWidth: 120, imageHeight: 120 }
+    - { url: "http://gracefitzroy.com", name: Grace, backgroundImage: grace-bg, image: grace.png, imageWidth: 120, imageHeight: 120 }
+    - { url: "http://oursay.org", name: OurSay, backgroundImage: oursay-bg.png, image: oursay.png, imageWidth: 150, imageHeight: 110 }
+    - { url: "https://livebelowtheline.com.au/", name: Live below the line, backgroundImage: live-bellow-bg, image: live-bellow.png, imageWidth: 204, imageHeight: 54 }
+    - { url: "http://rightnow.org.au/", name: Right Now, backgroundImage: right-now-bg, image: right-now.png, imageWidth: 120, imageHeight: 120 }
+    - { url: "http://fitzroygsd.com/", name: Fitzroy GSD, backgroundImage: gsd-bg, image: gsd.png, imageWidth: 120, imageHeight: 120 }
+    - { url: "http://clarity.io/", name: Clarity.io, backgroundImage: clarity-bg.png, image: clarity.png, imageWidth: 120, imageHeight: 120 }
+    - { url: "http://sideracket.com/", name: Side Racket, backgroundImage: sideracket-bg, image: sideracket.png, imageWidth: 120, imageHeight: 120 }
+    - { url: "http://futurespark.com.au/", name: Future Spark, backgroundImage: future-spark-bg, image: future-spark.png, imageWidth: 168, imageHeight: 38 }

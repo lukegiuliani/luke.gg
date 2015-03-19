@@ -1,0 +1,49 @@
+.subscribe{
+
+	color:#fff;
+	position:relative;
+	background:#3498DB url(../images/home/subscribe.png) repeat;
+
+	padding:30px 0;
+	text-shadow:0 1px 0 #2b7aaf;
+	p{
+		margin:0;
+		font-size:14px;
+	}
+	h2{
+		font-weight:normal;
+	}
+	@include break(sm) {
+		padding:60px 0;
+	}
+
+}
+
+.subscribe__field{
+	margin-top:10px;
+	width:100%;
+	height:60px;
+	color:$c__black;
+	border-radius:5px;
+	border:0;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	padding:10px 60px 10px 16px;
+	@include break(sm) {
+		padding:10px 150px 10px 16px;
+	}
+
+
+}
+
+.subscribe__button{
+	position:absolute;
+	right:25px;
+	top:20px;
+	width:50px;
+	border-radius:5px;
+	padding-top:8px;
+	padding-bottom:8px;
+	@include break(md) {
+		width:120px;
+	}
+}

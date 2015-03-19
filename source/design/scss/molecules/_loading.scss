@@ -1,0 +1,55 @@
+body.page-loading{
+	overflow:hidden;
+}
+
+.site-loading{
+	position:fixed;
+	background:#eeeeee;
+	width:100%;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+
+	z-index:100000;
+	display:none;
+}
+
+.site-loading-spinner{
+	width:35px;
+	height:35px;
+	left:50%;
+	margin-left:-17px;
+	margin-top:-17px;
+	top:50%;
+	background:#000;
+	position:absolute;
+	-webkit-animation-name: loading-rotate;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-name: loading-rotate;
+	-moz-animation-duration: 1s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: linear;
+	&:after{
+		width:1px;
+		content: " ";
+		position:absolute;
+		display:block;
+		left:17px;
+		top:0;
+		height:100%;
+		background:#fff;
+	}
+	&:before{
+		width:100%;
+		content: " ";
+		position:absolute;
+		display:block;
+		left:0;
+		top:17px;
+		height:1px;
+		background:#fff;
+	}
+}

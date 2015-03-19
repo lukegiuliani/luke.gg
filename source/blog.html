@@ -1,0 +1,39 @@
+---
+layout: default
+title: Blog
+generator: pagination
+pagination:
+    max_per_page: 3
+use:
+- posts
+
+---
+
+{% include "standfirst" with {'image':'culture/culture.jpg', 'title': 'Studio Talk!', 'classes':'standfirst--culture overlay'} %}
+
+<section class="blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
+                {% include 'blog-list' with {'page': page} %}
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{#<div>
+    {% if page.pagination.previous_page or page.pagination.next_page %}
+    <nav class="article clearfix">
+        {% if page.pagination.previous_page %}
+
+        <a class="previous" href="{{ page.pagination.previous_page.url }}" title="Previous Page"><span class="title">Previous Page</span></a>
+
+        {% endif %}
+        {% if page.pagination.next_page %}
+        <a class="next" href="{{ page.pagination.next_page.url }}" title="Next Page"><span class="title">Next Page</span></a>
+        {% endif %}
+    </nav>
+    {% endif %}
+</div>
+#}

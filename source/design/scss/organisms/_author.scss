@@ -1,0 +1,30 @@
+.author {
+	position:relative;
+	z-index:1;
+	padding-left:60px;
+	min-height:45px;
+}
+
+.author__image{
+	position:absolute;
+	left:0;
+	top:0;
+	img{
+		width:45px;
+		height:45px;
+		border-radius:90px;
+	}
+}
+
+.author__name{
+	font-size:15px;
+	font-family:$f__proxima;
+	margin:0;
+}
+
+.author__position{
+	font-weight:normal;
+	display:block;
+	font-size:12px;
+	color:#666666;
+}

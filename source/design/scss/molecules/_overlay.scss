@@ -1,0 +1,31 @@
+.overlay{
+	&:after{
+		position:absolute;
+		z-index:1;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+		background:rgba(0,0,0,0.4);
+		content: " ";
+		display:block;
+	}
+}
+
+.overlay__2e2e2e--32{
+	&:after {
+		background: rgba(#2e2e2e, 0.32);
+	}
+}
+
+.overlay__000000--20{
+	&:after {
+		background:rgba(#000000,0.2);
+	}
+}
+
+.overlay__000000--30{
+	&:after {
+		background:rgba(#000000,0.3);
+	}
+}

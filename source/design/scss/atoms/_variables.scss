@@ -1,0 +1,53 @@
+$greybrown: #29231f;
+$blue: #006dae;
+$paleblue: #40809a;
+$lightblue: #3f86a3;
+$text: #332f2f;
+$lightgrey: #b6bac2;
+$lightergrey: #e9e9e9;
+$red: #cd4948;
+$fuchsia: #9f386b;
+$lightpurple: #818393;
+$darkaqua: #335457;
+$lightbrown: #9a866f;
+$brown: #4c382e;
+
+$c__black: #000;
+$c__white: #fff;
+$c__red:#ea504c;
+
+$f__proxima: 'proxima-nova-alt', Arial, sans-serif;
+$f__metaserif: "ff-meta-serif-web-pro", Arial, sans-serif;
+
+$mobilewidth: 768px;
+$tabletwidth: 992px;
+$largewidth: 1200px;
+$maxwidth: 1440px;
+
+$breakpoints: (
+	sm: $mobilewidth,
+	md: $tabletwidth,
+	lg: $largewidth,
+	max: $maxwidth
+);
+
+/*
+Bootstrap overrides
+*/
+$font-family-sans-serif:$f__proxima;
+$headings-font-family:$f__metaserif;
+$text-color:#333333;
+$font-size-base: 16px;
+$line-height-base: 1.5;
+$headings-line-height: 1.5;
+$font-size-h1: 36px;
+$font-size-h2: 29px;
+$link-color: #377bb5;
+
+$grid-float-breakpoint:$tabletwidth;
+
+/*Animate settings
+https://github.com/benhodgson87/animate.scss
+*/
+$enable-all-modules: true;
+$enable-prefixes: true;

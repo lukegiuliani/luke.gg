@@ -1,0 +1,42 @@
+{
+  "name": "SquareweaveSite",
+  "version": "1.0.0",
+  "description": "The default bower packages for the default shuriken theme.",
+  "main": "bower.json",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "respond": "~1.4.2",
+    "lesshat": "~3.0.2",
+    "bootstrap": "~3.3.1",
+    "modernizr": "~2.8.3",
+    "jquery-smartresize": "*",
+    "bootstrap-sass-official": "~3.3.1",
+    "bourbon": "~4.0.2",
+    "WOW": "~1.0.2",
+    "jquery-hammerjs": "~2.0.0",
+    "html5shiv": "~3.7.2",
+    "media-match": "~2.0.2",
+    "imagesloaded": "~3.1.8"
+  },
+  "devDependencies": {
+    "jquery": "~2.1.1",
+    "respond": "~1.4.2",
+    "lesshat": "~3.0.2",
+    "bootstrap": "~3.3.1",
+    "modernizr": "~2.8.3",
+    "jquery-smartresize": "*",
+    "bootstrap-sass-official": "~3.3.1",
+    "bourbon": "~4.0.2",
+    "WOW": "~1.0.2",
+    "jquery-hammerjs": "~2.0.0",
+    "html5shiv": "~3.7.2",
+    "media-match": "~2.0.2",
+    "imagesloaded": "~3.1.8"
+  }
+}

@@ -1,0 +1,17 @@
+/.sculpin/
+/app/cache/*
+/app/config/sculpin_kernel_*.yml
+/app/config/sculpin_site_*.yml
+/app/logs/*
+/output_*/
+/source/design/css/*
+!/source/design/css/.gitkeep
+source/design/vendor/bower
+bower_components
+node_modules
+s3.conf
+sculpin.phar
+*.idea/
+*.tmp/
+*.swp
+*.swo

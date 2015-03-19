@@ -1,0 +1,33 @@
+.quickfind{
+	background:#333333;
+	padding:4em 0 1em;
+	color:$c__white;
+	@include break(sm) {
+		display:none;
+	}
+}
+
+.quickfind__close{
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+.quickfind__link{
+	color:$c__white;
+	font-size:18px;
+	display:block;
+	small{
+		display:block;
+		color:#A6A6A6;
+		font-size:14px;
+	}
+	&:hover{
+		color:$c__white;
+		small{
+			color:$c__white;
+		}
+	}
+}
+.quickfind__address{
+	@include pseudorule($top:true, $offset:-15px, $height:2px);
+}

@@ -1,0 +1,48 @@
+.work-with-us{
+	color:#fff;
+}
+
+.work-with-us__list{
+	margin-top:50px;
+	margin-bottom:40px;
+	@include break(sm) {
+	    margin-top:70px;
+	}
+}
+
+.work-with-us__list-item{
+	position:relative;
+	border-top:1px solid #eeeeee;
+	padding-bottom:25px;
+	color:#666666;
+	padding-top:25px;
+	&:first-child{
+		padding-top:0;
+		border-top:0;
+		.work-with-us__tag{
+			top:0px;
+		}
+	}
+}
+
+.work-with-us__name{
+	color:#333333;
+	font-weight:bold;
+	margin:0;
+	font-size:17px;
+	font-family: $f__proxima;
+}
+
+.work-with-us__tag{
+	background:#fff;
+	color:#ea504c;
+	font-weight:bold;
+	text-align: center;
+	font-size: 12px;
+	text-transform: uppercase;
+	margin-left:10px;
+}
+
+.work-with-us__description{
+	font-size:15px;
+}

@@ -1,0 +1,136 @@
+.standfirst{
+	@include transition(0.5s all ease-out);
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	text-align: center;
+	overflow: hidden;
+	position:relative;
+	z-index:1;
+	padding:100px 0 100px 0;
+	color:#fff;
+
+	@include break(md) {
+		padding:100px 0 90px;
+	}
+
+	@include break(lg) {
+		padding:130px 0;
+	}
+}
+.standfirst--background-repeat{
+	background-repeat:repeat;
+	background-size:auto;
+}
+.standfirst__content{
+	position:relative;
+	z-index: 2;
+}
+
+.standfirst__title{
+	font-size: 34px;
+	font-weight: bold;
+	@include break(sm) {
+		font-weight: 600;
+		font-size: 44px;
+	}
+}
+
+.standfirst__subtitle{
+	font-weight:normal;
+}
+
+.standfirst--home{
+	overflow:hidden;
+	position:relative;
+	background-image:url(../images/culture/culture.jpg);
+	padding:120px 0 70px;
+	text-align:left;
+	@include break(sm) {
+		padding:140px 0 50px;
+	}
+	@include break(md) {
+		padding:175px 0 60px 0;
+	}
+	@include break(lg) {
+		padding:264px 0 168px 0;
+	}
+
+	@media only screen
+	and (min-device-width : 768px)
+	and (max-device-width : 1024px) {
+		.standfirst--home__video{
+			display:none;
+		}
+	}
+
+
+
+
+}
+
+.standfirst--culture{
+	@include break(lg) {
+		padding:250px 0 220px 0
+	}
+}
+
+.standfirst--home__button{
+	font-size: 15px;
+	color: #fff;
+	font-family: $f__proxima;
+	font-weight:100;
+}
+.standfirst--home__arrow{
+	@include triangle($direction:'right', $width:10px, $height:10px, $color:$c__white);
+	display:inline-block;
+}
+
+.standfirst--home__video{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:$c__white;
+	video{
+
+	}
+}
+
+.standfirst--blog-post{
+	padding:150px 0;
+	@include break(sm) {
+		padding:140px 0;
+	}
+	@include break(md) {
+		padding:200px 0 ;
+	}
+	@include break(lg) {
+		padding:270px 0;
+	}
+}
+
+.standfirst--home__heading{
+	color: #fff;
+	text-align: left;
+	font-weight: 700;
+	z-index: 1000;
+	margin:0;
+	line-height: 120%;
+	font-size: 28px;
+	@include break(sm) {
+		font-size: 36px;
+		max-width:500px;
+	}
+	@include break(md) {
+		font-size: 39px;
+		max-width: 600px
+	}
+	@include break(lg) {
+		font-size: 72px;
+		line-height:72px;
+		max-width: 770px
+	}
+}
+
