@@ -296,13 +296,13 @@ module.exports = function (grunt) {
 			staging: {
 				args: {
 					env: 'staging',
-					url: 'http://staging.squareweave.com.au'
+					url: 'http://staging.luke.gg'
 				}
 			},
 			production: {
 				args: {
 					env: 'prod',
-					url: 'https://www.squareweave.com.au'
+					url: 'https://luke.gg'
 				}
 			}
 		},
@@ -401,8 +401,8 @@ module.exports = function (grunt) {
 		grunt.log.subhead('That isn\'t a valid task. Run one of these instead:\n'['red'].bold);
 		grunt.log.writeln(['~~~~~~~\n'['rainbow'] +
 			'grunt develop:'['green']+'Starts livereload watcher for scss, html and js in /source, builds static site in /output_dev then starts static server and then opens in default browser. \n' +
-			'grunt staging:'['green']+' Builds complete static site to /output_prod folder with the base url of http://staging.squareweave.com.au \n'+
-			'grunt production:'['green']+' Builds complete static site to /output_prod folder with the base url of http://www.squareweave.com.au \n'+
+			'grunt staging:'['green']+' Builds complete static site to /output_prod folder with the base url of http://staging.luke.gg \n'+
+			'grunt production:'['green']+' Builds complete static site to /output_prod folder with the base url of http://luke.gg \n'+
 			'grunt preview:'['green']+' Builds complete static site (staging version) to /output_prod, copies to /output_dev then starts static web server to preview build site.\n' +
 			'~~~~~~~'['rainbow']
 		]);

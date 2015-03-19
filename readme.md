@@ -1,7 +1,9 @@
-Squareweave Website
+Luke's Website
 ===================
 
 Compiled with [Sculpin](http://sculpin.io).
+
+Shamelessly based off the Squareweave site. Special thanks to [Tom Gordon](https://github.com/thomas-gordon) for the build system and basically everything awesome in this repo.
 
 
 Downloading Sculpin
