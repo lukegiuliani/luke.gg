@@ -26,9 +26,11 @@ work:
     - { url: "https://squareweave.com.au", name: Squareweave, backgroundImage: squareweave-bg.png, image: squareweave.png, imageWidth: 120, imageHeight: 120 }
     - { url: "http://gracefitzroy.com", name: Grace, backgroundImage: grace-bg, image: grace.png, imageWidth: 120, imageHeight: 120 }
     - { url: "http://oursay.org", name: OurSay, backgroundImage: oursay-bg.png, image: oursay.png, imageWidth: 150, imageHeight: 110 }
-    - { url: "https://livebelowtheline.com.au/", name: Live below the line, backgroundImage: live-bellow-bg, image: live-bellow.png, imageWidth: 204, imageHeight: 54 }
-    - { url: "http://rightnow.org.au/", name: Right Now, backgroundImage: right-now-bg, image: right-now.png, imageWidth: 120, imageHeight: 120 }
     - { url: "http://fitzroygsd.com/", name: Fitzroy GSD, backgroundImage: gsd-bg, image: gsd.png, imageWidth: 120, imageHeight: 120 }
+    - { url: "http://climateforchange.org.au/", name: Climate for Change, backgroundImage: climate-for-change-bg.png, image: climate-for-change.png, imageWidth: 120, imageHeight: 120 }
+    - { url: "http://rightnow.org.au/", name: Right Now, backgroundImage: right-now-bg, image: right-now.png, imageWidth: 120, imageHeight: 120 }
+    - { url: "https://livebelowtheline.com.au/", name: Live below the line, backgroundImage: live-bellow-bg, image: live-bellow.png, imageWidth: 204, imageHeight: 54 }
     - { url: "http://clarity.io/", name: Clarity.io, backgroundImage: clarity-bg.png, image: clarity.png, imageWidth: 120, imageHeight: 120 }
-    - { url: "http://sideracket.com/", name: Side Racket, backgroundImage: sideracket-bg, image: sideracket.png, imageWidth: 120, imageHeight: 120 }
     - { url: "http://futurespark.com.au/", name: Future Spark, backgroundImage: future-spark-bg, image: future-spark.png, imageWidth: 168, imageHeight: 38 }
+    - { url: "http://sideracket.com/", name: Side Racket, backgroundImage: sideracket-bg, image: sideracket.png, imageWidth: 120, imageHeight: 120 }
+    - { url: "http://shift.vc/", name: Shift.vc, backgroundImage: shift.png, image: shift.png, imageWidth: 120, imageHeight: 106 }
