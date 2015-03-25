@@ -302,7 +302,7 @@ module.exports = function (grunt) {
 			production: {
 				args: {
 					env: 'prod',
-					url: 'https://luke.gg'
+					url: 'http://luke.gg'
 				}
 			}
 		},

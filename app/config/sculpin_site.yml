@@ -1,11 +1,11 @@
 # The contents of this file are parsed and made available as
 # via `site.*`. So for example, {{ site.title }} can be used
 # in a template to get the contents of the `title` key.
-app_name: SquareweaveApp
-release_version: 1.0.15
+app_name: LGApp
+release_version: 1.0.16
 title: Luke Giuliani
 byline: "Entrepreneur, strategist and tech"
-ga_id: UA-5821577-1
+ga_id: UA-54362665-1
 fb_app_id: 177944409014156
 keywords: "Social Enterprise, Luke Giuliani, Luke, Giuliani, Grace, Squareweave, Fitzroy GSD, "
 description: "Passionate about using technology to make the world better, Luke is a social entrepreneur who has started numerous projects and businesses. These include Squareweave, a web company making the world better with technology; Grace, a cafe in Fitzroy; OurSay, a social enterprise connecting citizens to decision makers; and The Fitzroy Academy of Getting Shit Done, a project to teach people how to work on ideas that don’t even exist yet."

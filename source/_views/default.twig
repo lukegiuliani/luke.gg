@@ -7,18 +7,17 @@
     <title>{{ site.title }} - {{ page.title }}</title>
     <meta name="keywords" content="{{ page.keywords|default(site.keywords) }}">
     <meta name="description" content="{{ page.description|default(site.description) }}">
-    <link rel="shortcut icon" href="https://www.squareweave.com.au/app/theme/default/design/images/ico/apple_114x114.png">
-    <link rel="image_src" href="https://www.squareweave.com.au/app/theme/default/design/images/ico/apple_114x114.png">
+    <link rel="shortcut icon" href="{{ site.url }}/design/images/ico/apple_114x114.png">
+    <link rel="image_src" href="{{ site.url }}/design/images/ico/apple_114x114.png">
 
-    <meta property="fb:app_id" content="{{ site.fb_app_id }}">
 
     {% if site.nofollow %}
     <meta name="robots" content="noindex,nofollow">
     {% endif %}
 
     <!-- Open Graph metadata -->
-    <meta property="og:image" content="https://www.squareweave.com.au/app/theme/default/design/images/ico/apple_114x114.png"/>
-    <meta property="og:url" content="http://squareweave.com.au"/>
+    <meta property="og:image" content="{{ site.url }}/design/images/ico/apple_114x114.png"/>
+    <meta property="og:url" content="http://luke.gg"/>
     <meta property="og:title" content="{{ page.title|default(site.title) }}"/>
     <meta property="og:description" content="{{ page.description|default(site.description) }}"/>
 
@@ -28,8 +27,8 @@
     <meta name="twitter:title" content="{{ site.title }} – {{ site.byline }}">
     <meta name="twitter:description" content="{{ page.keywords|default(site.description) }}">
     <meta name="twitter:creator" content="{{ site.title }}">
-    <meta name="twitter:image:src" content="https://www.squareweave.com.au/app/theme/default/design/images/ico/apple_114x114.png">
-    <meta name="twitter:domain" content="http://www.squareweave.com.au">
+    <meta name="twitter:image:src" content="{{ site.url }}/design/images/ico/apple_114x114.png">
+    <meta name="twitter:domain" content="http://luke.gg">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="application-name" content="{{ site.app_name }}">
@@ -41,6 +40,8 @@
     <link rel="apple-touch-icon-precomposed" href="{{ site.url }}/design/images/ico/apple_57x57.png">
     <link href="/design/css/global.css?v={{ site.release_version }}" media="all" rel="stylesheet" type="text/css"/>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <link rel="canonical" href="http://luke.gg" />
 
     <!-- build:js /design/scripts/modernizr.js -->
     <script src="/design/vendor/bower/modernizr/modernizr.js"></script>
@@ -65,23 +66,6 @@
 
 </head>
 <body class="body-url-{{ page.url|trim('/')|default('home')|replace({ '/': '-' }) }}">
-
-<script>
-    window.fbAsyncInit = function() {
-        FB.init({
-            appId      : '{{ site.fb_app_id }}',
-            xfbml      : true,
-            version    : 'v2.2'
-        });
-    };
-    (function(d, s, id){
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {return;}
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-</script>
 
 <script>
     (function (i, s, o, g, r, a, m) {
@@ -111,6 +95,7 @@
 
     <div class="page-wrapper">
         {% block content_wrapper %}
+
         <div class="page-contents">
             {% block content %}
 
