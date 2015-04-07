@@ -3,9 +3,6 @@
   "preferGlobal": false,
   "repository": "git@bitbucket.org:Squareweave/app-template.git",
   "version": "1.0.0",
-  "dependencies": {
-    "grunt": "*"
-  },
   "devDependencies": {
     "grunt": "*",
     "grunt-usemin": "2.4.0",
