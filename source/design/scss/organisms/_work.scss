@@ -11,6 +11,28 @@
 	background:#333;
 
 	-webkit-backface-visibility: hidden;
+	
+	.work-item__role{
+		display: block;
+		color: #fff;
+		text-align: center; padding-top: 10px;
+		text-shadow: 0px 1px 0px rgba(0,0,0,0.4);
+		opacity: 0;
+			@include transition(0.2s all);
+			@include transform(opacity(1.05));				
+	}	
+	
+
+	.work-item__figure:after{
+		display: block;
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;	
+		background: rgba(0,0,0,0.1);			
+	}
 	&:hover{
 		.work-item__figure{
 			img{
@@ -24,6 +46,17 @@
 				@include transform(scale(.95));
 			}
 		}
+		.work-item__role{
+			opacity: 1;
+
+		}
+		.work-item__figure:after{
+			@include transition(0.2s all);
+			@include transform(bakcground(1.05));		
+			background: rgba(0,0,0,0.5);	
+
+		}		
+			
 	}
 }
 
