@@ -23,14 +23,16 @@ jobs:
     - { name: Business Development Manager, tag: New Job, description: "Digitally-savvy, socially minded, business development type who is allergic to the word ‘sales’." }
 
 work:
-    - { url: "https://squareweave.com.au", name: Squareweave, backgroundImage: squareweave-bg.png, image: squareweave.png, imageWidth: 120, imageHeight: 120 }
-    - { url: "http://gracefitzroy.com", name: Grace, backgroundImage: grace-bg, image: grace.png, imageWidth: 120, imageHeight: 120 }
-    - { url: "http://oursay.org", name: OurSay, backgroundImage: oursay-bg.png, image: oursay.png, imageWidth: 150, imageHeight: 110 }
-    - { url: "http://fitzroygsd.com/", name: Fitzroy GSD, backgroundImage: gsd-bg, image: gsd.png, imageWidth: 120, imageHeight: 120 }
-    - { url: "http://climateforchange.org.au/", name: Climate for Change, backgroundImage: climate-for-change-bg.png, image: climate-for-change.png, imageWidth: 120, imageHeight: 120 }
-    - { url: "http://rightnow.org.au/", name: Right Now, backgroundImage: right-now-bg, image: right-now.png, imageWidth: 120, imageHeight: 120 }
-    - { url: "https://livebelowtheline.com.au/", name: Live below the line, backgroundImage: live-bellow-bg, image: live-bellow.png, imageWidth: 204, imageHeight: 54 }
-    - { url: "http://clarity.io/", name: Clarity.io, backgroundImage: clarity-bg.png, image: clarity.png, imageWidth: 120, imageHeight: 120 }
-    - { url: "http://futurespark.com.au/", name: Future Spark, backgroundImage: future-spark-bg, image: future-spark.png, imageWidth: 168, imageHeight: 38 }
-    - { url: "http://sideracket.com/", name: Side Racket, backgroundImage: sideracket-bg, image: sideracket.png, imageWidth: 120, imageHeight: 120 }
-    - { url: "http://shift.vc/", name: Shift.vc, backgroundImage: shift.png, image: shift.png, imageWidth: 120, imageHeight: 106 }
+    - { url: "https://squareweave.com.au", role: Founder, name: Squareweave, backgroundImage: squareweave-bg.png, image: squareweave.png, imageWidth: 120, imageHeight: 120 }
+    - { url: "http://gracefitzroy.com", role: Founder, name: Grace, backgroundImage: grace-bg, image: grace.png, imageWidth: 120, imageHeight: 120 }
+    - { url: "http://oursay.org", role: Director, name: OurSay, backgroundImage: oursay-bg.png, image: oursay.png, imageWidth: 150, imageHeight: 110 }
+    - { url: "http://fitzroygsd.com/", role: Founder, name: Fitzroy GSD, backgroundImage: gsd-bg, image: gsd.png, imageWidth: 120, imageHeight: 120 }
+    - { url: "http://climateforchange.org.au/", role: Chair, name: Climate for Change, backgroundImage: climate-for-change-bg.png, image: climate-for-change.png, imageWidth: 120, imageHeight: 120 }
+    - { url: "http://rightnow.org.au/", role: Board member, name: Right Now, backgroundImage: right-now-bg, image: right-now.png, imageWidth: 120, imageHeight: 120 }
+    - { url: "https://livebelowtheline.com.au/", role: Board member, name: Live below the line, backgroundImage: live-bellow-bg, image: live-bellow.png, imageWidth: 204, imageHeight: 54 }
+    - { url: "http://clarity.io/", role: Founder, name: CTO, backgroundImage: clarity-bg.png, image: clarity.png, imageWidth: 120, imageHeight: 120 }
+    - { url: "http://futurespark.com.au/", role: Founder, name: Future Spark, backgroundImage: future-spark-bg, image: future-spark.png, imageWidth: 168, imageHeight: 38 }
+    - { url: "http://sideracket.com/", role: CTO, name: Side Racket, backgroundImage: sideracket-bg, image: sideracket.png, imageWidth: 120, imageHeight: 120 }
+    - { url: "http://shift.vc/", role: Founder, name: Shift.vc, backgroundImage: shift.png, image: shift.png, imageWidth: 120, imageHeight: 106 }
+
+# add in iawards. 
