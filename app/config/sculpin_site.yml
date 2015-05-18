@@ -25,5 +25,6 @@ work:
     - { url: "http://futurespark.com.au/", role: Founder, name: Future Spark, backgroundImage: future-spark-bg, image: future-spark.png, imageWidth: 168, imageHeight: 38 }
     - { url: "http://sideracket.com/", role: Partner, name: Side Racket, backgroundImage: sideracket-bg, image: sideracket.png, imageWidth: 120, imageHeight: 120 }
     - { url: "http://shift.vc/", role: Founder, name: Shift.vc, backgroundImage: shift.png, image: shift.png, imageWidth: 120, imageHeight: 106 }
+    - { url: "/bio", role: Read my Bio, name: Read my Bio, backgroundImage: luke-giuliani.png, image: luke-giuliani.png, imageWidth: 120, imageHeight: 106 }
 
 # add in iawards. 

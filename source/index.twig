@@ -9,7 +9,7 @@ title: Luke Giuliani
     <div class="row no-gutter">
         {% for workItem in site.work %}
         <div class="col-xs-12 col-sm-6 col-md-4">
-            <a class="work-item overlay overlay__000000--30 flipInX wow" href="{{ workItem.url|default('#') }}" target="_blank">
+            <a class="work-item overlay overlay__000000--30 flipInX wow" href="{{ workItem.url|default('#') }}">
                 <figure class="work-item__figure">
                     <img src="/design/images/work/project/{{ workItem.backgroundImage }}" alt="{{ workItem.name }}" class="img-responsive work-item__image"/>
                 </figure>

@@ -35,3 +35,21 @@
 
 @import "pages/_home";
 @import "pages/_culture";
+
+
+.bio{background: #fff; padding: 30px 0;}
+
+.bio hr,
+.bio h2,
+.bio p{max-width: 700px; margin: 0 auto;}
+
+.bio hr{margin-top: 40px;}
+.bio h2{margin-top: 50px;}
+.bio p{margin-bottom: 20px; font-size: 19px; }
+
+
+.headshot a{display: block; border: 1px solid #f3f4ef; padding: 10px; border-radius: 5px; width: 370px; margin: 20px auto 40px; text-decoration: none;}
+.headshot a .desc{display: block; font-size: 12px; color: #a2a295; text-align: center; padding: 10px 0 0;}
+
+.headshot a:hover{border-color: darken (#f3f4ef, 20%); box-shadow: 0px 2px 1px rgba(0,0,0,0.1);}
+.headshot a:hover .desc{color: darken (#f3f4ef, 20%);}
